@@ -63,10 +63,10 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/your-org/fri-collect"
-Repository = "https://github.com/your-org/fri-collect"
-Documentation = "https://github.com/your-org/fri-collect#readme"
-BugTracker = "https://github.com/your-org/fri-collect/issues"
+Homepage = "https://github.com/zengxiaoqing/FRI"
+Repository = "https://github.com/zengxiaoqing/FRI"
+Documentation = "https://github.com/zengxiaoqing/FRI#readme"
+BugTracker = "https://github.com/zengxiaoqing/FRI/issues"
 
 # ── Package discovery ────────────────────────────────────────────
 
