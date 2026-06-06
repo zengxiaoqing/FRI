@@ -78,6 +78,30 @@ pip install -e ".[dev]"
 
 ---
 
+## Algorithm Overview
+
+FRI improves upon traditional bilinear interpolation by accounting for the
+elevation difference between the coarse NWP model grid and the target location:
+
+```
+corrected_value = grid_forecast + (target_elevation - grid_elevation) × lapse_rate
+```
+
+This ensures that mountainous areas (where the model's terrain is smoother than
+reality) get physically consistent corrections.
+
+![Grid Interpolation Comparison](docs/images/grid_comparison.png)
+*Figure 1: ECMWF 2m temperature — comparison of interpolation methods
+(115–118°E, 39.3–41.3°N). From left to right: raw 12.5km model field,
+nearest neighbor 5km, FRI terrain-aware 5km, FRI terrain-aware 1km.*
+
+![Mountain Station Comparison](docs/images/mountain_methods.png)
+*Figure 2: Interpolation method comparison at five mountain stations
+(Huangshan, Foyeding, Jiuxianshan, Taishan, Emeishan). FRI shows significant
+terrain correction at high-elevation sites.*
+
+---
+
 ## Quick Start — Station Interpolation
 
 Interpolate ECMWF or CMA-GFS model data to weather station locations.
@@ -501,6 +525,15 @@ validate_inputs(
 
 All original names (`dRead_Station_Info`, `dRGrib_EC`, etc.) are preserved as
 aliases for backward compatibility.
+
+---
+
+## Model Comparison
+
+![ECMWF vs CMA-GFS](docs/images/mountain_comparison.png)
+*Figure 3: ECMWF vs CMA-GFS interpolation results at five mountain stations.
+Both models capture the elevation-dependent temperature decrease, with some
+differences in absolute values due to different model physics.*
 
 ---
 
