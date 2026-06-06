@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/fri/__init__.py
+src/fri/demo.py
+src/fri/interpolate.py
+src/fri/interpolator.py
+src/fri_collect.egg-info/PKG-INFO
+src/fri_collect.egg-info/SOURCES.txt
+src/fri_collect.egg-info/dependency_links.txt
+src/fri_collect.egg-info/requires.txt
+src/fri_collect.egg-info/top_level.txt

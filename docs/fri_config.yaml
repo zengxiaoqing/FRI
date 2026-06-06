@@ -1,0 +1,53 @@
+# ────────────────────────────────────────────────────────────────
+# FRI_collect 配置文件模板
+# ────────────────────────────────────────────────────────────────
+# 用法： fri_interpolate(config="fri_config.yaml")
+# 说明： 用 # 注释掉不需要的项，或直接删除。
+# ────────────────────────────────────────────────────────────────
+
+# ========== 输入文件（必填） ==========
+
+# GRIB2 数值预报模式场文件
+grib_file: "input.grib2"
+
+# 模式配套的地形数据文件（GeoTIFF 格式）
+dem_file: "model_terrain.tif"
+
+# ========== 插值目标 ==========
+# 方式一：站点插值（散点）
+#   station_file: "stations.txt"
+# 方式二：规则网格插值
+#   target:
+#     type: "grid"
+#     begin_lon: 100
+#     end_lon: 120
+#     begin_lat: 20
+#     end_lat: 40
+#     lon_res: 0.05
+#     lat_res: 0.05
+#   target_dem: "target_grid_terrain.tif"
+
+# 二选一，去掉另一个的注释
+station_file: "stations.txt"
+# target:
+#   type: "grid"
+#   begin_lon: 100
+#   end_lon: 120
+#   begin_lat: 20
+#   end_lat: 40
+#   lon_res: 0.05
+#   lat_res: 0.05
+# target_dem: "target_terrain.tif"
+
+# ========== 插值变量（可选，默认6个） ==========
+# variables:
+#   - "2t"
+#   - "2rh"
+#   - "10u"
+#   - "10v"
+#   - "10ws"
+#   - "sp"
+
+# ========== 输出（可选） ==========
+# 输出文件路径，.nc → NetCDF, .h5 → HDF5
+# output_file: "result.nc"

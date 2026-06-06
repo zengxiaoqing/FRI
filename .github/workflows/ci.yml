@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality-gate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Harness quality gate
+
+        shell: pwsh
+        run: scripts/harness-win/quality_gate.ps1
+
+        env:
+          PAYLOAD: '{"stop_hook_active": false}'
+
+      # Add your stack-specific checks below:
+      # - name: Lint
+      #   run: [lint command]
+      # - name: Test
+      #   run: [test command]

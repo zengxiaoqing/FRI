@@ -1,0 +1,29 @@
+# Auto-detect text files and normalize line endings
+* text=auto
+
+# Shell scripts must be LF for Unix compatibility
+*.sh text eol=lf
+*.ps1 text eol=lf
+
+# Python scripts
+*.py text eol=lf
+
+# Web files
+*.js text eol=lf
+*.ts text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+
+# Config files
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.md text eol=lf
+*.jinja text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.ico binary
+*.pdf binary

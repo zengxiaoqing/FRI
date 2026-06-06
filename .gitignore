@@ -1,0 +1,71 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+vendor/
+
+# Build output
+dist/
+build/
+*.o
+*.exe
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.dll
+
+# Claude Code (local only)
+.claude/settings.local.json
+.claude/agent-trace.jsonl
+CLAUDE.local.md
+
+# Reasonix Code (runtime artifacts)
+.reasonix/memory/
+.reasonix/agent-trace.jsonl
+
+# Kimi Code CLI (local only)
+.kimi/agent-trace.jsonl
+
+# Data (track raw, ignore generated)
+data/processed/
+data/*.csv
+data/*.json
+data/*.parquet
+!data/raw/*.csv
+!data/raw/*.json
+
+# Large demo data files (too big for GitHub — download separately)
+data/raw/Demo/*.grb2
+data/raw/Demo/2024072412*
+data/raw/Demo/Terrain_1km.tif
+data/raw/Demo/*.7z
+data/raw/Demo/复杂版本.zip
+data/raw/Demo/Module_Interp_dem5.py
+data/raw/Demo/out.h5
+data/raw/Demo/__pycache__/
+data/raw/Demo/改造要求.txt
+data/raw/Demo/说明.txt
+data/raw/Demo/*.pdf
+
+# Generated output
+output/
+*.log
+
+# Session artifacts
+CHECKPOINT.json
+LEARNED.md
