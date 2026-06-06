@@ -49,18 +49,8 @@ data/*.parquet
 !data/raw/*.csv
 !data/raw/*.json
 
-# Large demo data files (too big for GitHub — download separately)
-data/raw/Demo/*.grb2
-data/raw/Demo/2024072412*
-data/raw/Demo/Terrain_1km.tif
-data/raw/Demo/*.7z
-data/raw/Demo/复杂版本.zip
-data/raw/Demo/Module_Interp_dem5.py
-data/raw/Demo/out.h5
-data/raw/Demo/__pycache__/
-data/raw/Demo/改造要求.txt
-data/raw/Demo/说明.txt
-data/raw/Demo/*.pdf
+# Demo data and station info (not included in repo)
+data/raw/Demo/
 
 # Generated output
 output/
