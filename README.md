@@ -128,14 +128,13 @@ result = fri_interpolate(
 )
 ```
 
-### Using Station File
+### Station File Format
 
-Station file format (plain text, space/tab/comma separated):
+Plain text, space/tab/comma separated:
 
 ```
-2472
-54511  北京  116.47  39.80  54.0  北京  北京
-58362  上海  121.45  31.23   6.0  上海  上海
+<N>
+<code>  <name>  <lon>  <lat>  <alt>  <province>  <city>
 ...
 ```
 

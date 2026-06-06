@@ -6,6 +6,15 @@ __pycache__/
 venv/
 vendor/
 
+# AI agent config (not algorithm-related)
+.reasonix/
+AGENTS.md
+CLAUDE.md
+CLAUDE.local.md
+
+# Harness scripts (not algorithm-related)
+scripts/harness-win/
+
 # Build output
 dist/
 build/
@@ -55,6 +64,10 @@ data/raw/Demo/
 # Generated output
 output/
 *.log
+
+# Empty directory markers
+.gitkeep
+*.gitkeep
 
 # Session artifacts
 CHECKPOINT.json
