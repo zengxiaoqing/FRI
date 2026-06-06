@@ -1,6 +1,6 @@
 # Architecture
 
-System design and technical decisions for FRI_collect.
+System design and technical decisions for FRInterp.
 
 ## Documents
 

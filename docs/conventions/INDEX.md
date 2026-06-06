@@ -1,6 +1,6 @@
 # Conventions
 
-Coding standards and patterns for FRI_collect.
+Coding standards and patterns for FRInterp.
 
 ## Documents
 

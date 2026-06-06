@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/FRInterp.egg-info/PKG-INFO
+src/FRInterp.egg-info/SOURCES.txt
+src/FRInterp.egg-info/dependency_links.txt
+src/FRInterp.egg-info/requires.txt
+src/FRInterp.egg-info/top_level.txt
+src/fri/__init__.py
+src/fri/auto_config.py
+src/fri/demo.py
+src/fri/interpolate.py
+src/fri/interpolator.py
+src/fri/output.py
+src/fri/validate.py

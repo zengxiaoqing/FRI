@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "fri-collect"
+name = "FRInterp"
 version = "0.1.0"
 description = "Terrain-aware Fine-Resolution Interpolation (FRI) for NWP model output"
 readme = "README.md"
@@ -40,7 +40,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: GIS",
 ]
 
-# Optional feature groups — install with:  pip install fri-collect[<group>]
+# Optional feature groups — install with:  pip install FRInterp[<group>]
 [project.optional-dependencies]
 dem = [
     "rasterio>=1.3",
@@ -59,7 +59,7 @@ dev = [
     "ruff>=0.1",
 ]
 all = [
-    "fri-collect[dem,io,vis,dev]",
+    "FRInterp[dem,io,vis,dev]",
 ]
 
 [project.urls]

@@ -1,6 +1,6 @@
 # Architecture Decision Records
 
-Key technical decisions for FRI_collect with context and tradeoffs.
+Key technical decisions for FRInterp with context and tradeoffs.
 
 ## Format
 

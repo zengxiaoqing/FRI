@@ -1,5 +1,5 @@
 # ── FRI_collect 依赖清单 ────────────────────────────────────────
-# 推荐方式: pip install fri-collect
+# 推荐方式: pip install FRInterp
 # 或开发模式: pip install -e .[dev]
 #
 # 此文件供 pip install -r requirements.txt 使用

@@ -1,4 +1,4 @@
-# FRI_collect — Knowledge Base
+# FRInterp — Knowledge Base
 
 Agent-readable project memory. Start here for context on any task.
 

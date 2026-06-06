@@ -1,3 +1,47 @@
+Metadata-Version: 2.4
+Name: FRI
+Version: 0.1.0
+Summary: Terrain-aware Fine-Resolution Interpolation (FRI) for NWP model output
+Author: Zeng Xiaoqing
+License: MIT
+Project-URL: Homepage, https://github.com/zengxiaoqing/FRI
+Project-URL: Repository, https://github.com/zengxiaoqing/FRI
+Project-URL: Documentation, https://github.com/zengxiaoqing/FRI#readme
+Project-URL: BugTracker, https://github.com/zengxiaoqing/FRI/issues
+Keywords: meteorology,interpolation,nwp,weather,terrain,fri,numerical-weather-prediction
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.21
+Requires-Dist: scipy>=1.7
+Requires-Dist: h5py>=3.0
+Requires-Dist: pandas>=1.3
+Requires-Dist: eccodes>=2.30
+Requires-Dist: rasterio>=1.3
+Provides-Extra: dem
+Requires-Dist: rasterio>=1.3; extra == "dem"
+Provides-Extra: io
+Requires-Dist: netCDF4>=1.6; extra == "io"
+Provides-Extra: vis
+Requires-Dist: matplotlib>=3.5; extra == "vis"
+Requires-Dist: cartopy>=0.21; extra == "vis"
+Requires-Dist: seaborn>=0.12; extra == "vis"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0; extra == "dev"
+Requires-Dist: ruff>=0.1; extra == "dev"
+Provides-Extra: all
+Requires-Dist: FRI[dem,dev,io,vis]; extra == "all"
+
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.9%2B-blue" alt="Python">
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
@@ -41,19 +85,19 @@ Administration.
 ### From PyPI (recommended)
 
 ```bash
-pip install FRInterp
+pip install fri-collect
 ```
 
 With optional visualization support:
 
 ```bash
-pip install "FRInterp[vis]"
+pip install "fri-collect[vis]"
 ```
 
 With NetCDF output support:
 
 ```bash
-pip install "FRInterp[io]"
+pip install "fri-collect[io]"
 ```
 
 ### From Source
@@ -570,7 +614,7 @@ If you use this algorithm in research, please cite the original paper:
 And the software package:
 
 ```bibtex
-@software{FRInterp,
+@software{fri_collect,
   title  = {FRI\_collect: Fine-Resolution Interpolation Toolkit},
   author = {Zeng, Xiaoqing and others},
   year   = {2025},
